@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-color: hsl(52, 92%, 56%);
+}
+
+/*Pagina Inicial*/
+a {
+    text-decoration: none;
+}
+
+.paginaInicial {
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 20px;
+    color: #F6DB29;
+    background-color: #fff;
+    font-family: 'Sunday';
+    font-size: 25px;
+    border-radius: 150px;
+    text-align: center;
+
+}
+
+.paginaInicial:hover {
+    color:#F6DB29;
+    transition: transform 0.2s;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #808145;
+}
+
+/*Logo*/
+.logo img {
+    display: inline;
+}
+.logo {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*Integrantes*/
+.integrantes2,
+.integrantes {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 200%;
+    padding: 18px;
+    margin-top: 20px;
+    display: flex; 
+    align-items: center;
+}
+
+td {
+    padding: 0 90px;
+}
+
+img {
+    display: inline;
+    padding: 8px;
+}
+
+/*Cor e Fonte*/
+li {
+    padding: 3px;
+    font-family: 'Sunday';
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+}
+p {
+    font-family: 'Sunday';
+    font-size: 20px;
+    color: #000000;
+}
+@font-face{
+    font-family:'Sunday';
+    src: url('PixAntiqua.ttf') format('truetype');
+  }
+
+
+  .linha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .coluna {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 25px;
+    align-items: center;
+  }
+  @media (max-width: 600px) {
+    .logo img {
+        max-width: 400px;
+    }
+  }
+
+
+
+
+
+

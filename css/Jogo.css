@@ -1,0 +1,103 @@
+body {
+    font-family: 'Sunday';
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.png') ; /* Substitua 'background.jpg' pelo caminho correto para sua imagem de fundo */
+    background-size: contain;
+    background-position: center; /* A imagem de fundo será centralizada */
+}
+
+/* Estilos para a barra de menu */
+.conteudo > div {
+    flex: 1; /* Ocupa o espaço disponível igualmente */
+    max-width: 400px; /* Limita a largura máxima de cada bloco */
+    text-align: justify;
+}
+.conteudo p {
+    font-size: 25px;
+    font-family: 'Sunday';    
+    color: #004AAD;
+    text-align: justify;
+}
+.conteudo {
+    max-width: 1300px;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin: 0 auto;
+}
+
+.logo {
+    background-color: #FFDE59;
+    border-radius: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px 0 0 0;
+}
+
+.logo img {
+    max-width: 25%; /* A imagem do cabeçalho ocupará 100% da largura da tela */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+.Nome {
+    margin-top: -5%;
+    margin-left: 4%;
+}
+.Nome img {
+    max-width: 50%; /* A imagem do cabeçalho ocupará 100% da largura da tela */
+    height: auto;
+    display: flex;
+    margin:0 auto;
+    
+}
+/*Pagina Inicial*/
+a {
+    text-decoration: none;
+}
+.paginaInicial {
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 20px;
+    color:#fff;
+    background-color: #004AAD;
+    font-family: 'Sunday';
+    font-size: 25px;
+    border-radius: 150px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+.paginaInicial:hover {
+    color: #fff;
+    transition: transform 0.2s;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #0f0d55;
+}
+
+@font-face{
+    font-family:'Sunday';
+    src: url('PixAntiqua.ttf') format('truetype');
+  }
+
+/* Estilos para telas menores (máximo de 600px) */
+
+@media (max-width: 700px) {
+    
+    .fundo > div {
+        flex: 0 1 100%; /* Ocupa toda a largura em telas pequenas */
+        max-width: none; /* Remove a largura máxima */
+        max-height: none;
+    }
+    .conteudo {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    .conteudo p{
+        font-size: 15px;
+    }
+    /* Restante das alterações para tornar os botões e o texto responsivos aqui */
+}

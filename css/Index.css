@@ -1,0 +1,159 @@
+body {
+    font-family: 'Sunday';
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a barra de menu */
+.menu > div {
+    flex: 1; /* Ocupa o espaço disponível igualmente */
+    max-width: 400px; /* Limita a largura máxima de cada bloco */
+    padding: 20px;
+    text-align: center;
+}
+.menu {
+    height: 600px;
+    margin-top: 3%;
+    margin-left: 8rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-wrap: wrap; /* Quebra para uma nova linha em telas pequenas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 65px; /* Espaçamento entre os itens */
+}
+.menu p {
+    padding: 6%;
+    font-size: 25px;
+    font-family: 'Sunday';    
+    color: #000000;
+    text-align: center;
+}
+.menu a {
+    text-decoration: none;
+}
+.amarelo {
+    background-color: #F6DB29;
+}
+.azul {
+    background-color: #2a23e3;
+}
+.verde {
+    background-color: #00BF63;
+}
+
+/* Estilos para os botões */
+
+.botoes {
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    width: 25%; /* Largura dos botões */
+    margin: 0 auto;
+}
+
+.botao {
+    color: #000000;
+    background-color: #2a23e3;   
+    padding: 15px 30px;    
+    border-radius: 50px;
+    margin-top: 20px;  
+    transition: transform 0.2s;
+}
+.botao2 {
+    color: #000000;
+    background-color: #00BF63;
+    padding: 15px 30px;    
+    border-radius: 50px;
+    margin-top: 20px;  
+    transition: transform 0.2s;
+}
+.botao:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #0f0d55;
+}
+.botao2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #004d28;
+}
+.botoes a {
+    text-decoration: none;
+  }
+
+.btn, .btn1, .btn2 {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 70%; /* Largura dos botões */
+    margin-top: 10px; /* Espaço entre os botões */
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.btn:hover{
+    background: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #0f0d55;
+}
+.btn1:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #004d28;
+}
+.btn2:hover{
+    background: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px #8f7f18 ;
+}
+
+/* Estilos para a imagem do cabeçalho */
+.logo {
+    margin-left: -5%;
+}
+.logo img {
+    max-width: 100%; /* A imagem do cabeçalho ocupará 100% da largura da tela */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+.Nome {
+    margin-top: -7%;
+    margin-left: 2%;
+}
+.Nome img {
+    max-width: 80%; /* A imagem do cabeçalho ocupará 100% da largura da tela */
+    height: auto;
+    display: flex;
+    margin:0 auto;
+    
+}
+
+@font-face{
+    font-family:'Sunday';
+    src: url('PixAntiqua.ttf') format('truetype');
+  }
+
+/* Estilos para telas menores (máximo de 600px) */
+@media (max-width: 600px) {
+    .menu{
+        margin: 0 auto;
+        padding: 10px 60px;
+    }
+    .menu > div {
+        flex: 0 1 100%; /* Ocupa toda a largura em telas pequenas */
+        max-width: none; /* Remove a largura máxima */
+        max-height: none;
+    }
+    /* Restante das alterações para tornar os botões e o texto responsivos aqui */
+}
+@media (max-width: 800px) {
+    .botoes {
+        font-size: 15px;
+        width: 50%;
+    }
+}

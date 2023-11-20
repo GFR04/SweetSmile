@@ -1,0 +1,179 @@
+body {
+    font-family: 'Sunday';
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.png') ; /* Substitua 'background.jpg' pelo caminho correto para sua imagem de fundo */
+    background-size: contain;
+    background-position: center; /* A imagem de fundo será centralizada */
+}
+
+a {
+    text-decoration: none;
+}
+
+.paginaInicial {
+    margin: 0 auto;
+    max-width: 180px;
+    padding: 10px 20px;
+    color:#fff;
+    background-color: #004d28;
+    font-family: 'Sunday';
+    font-size: 25px;
+    border-radius: 150px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+.paginaInicial:hover {
+    color: #fff;
+    transition: transform 0.2s;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px  #afc2b9;
+}
+
+/*Logo*/
+.logo img {
+    margin-top: -2%;
+    margin-left: -4%;
+    width: 110%;
+}
+
+/*Fundo*/
+.fundo {
+    margin-left: 8%;
+    width: 83%;
+    position: relative;
+}
+
+/*Linha*/
+
+hr {
+    width: 91%;
+    height: 0.5rem;
+    margin: 0 auto;
+    margin-top: -3.5%;
+    background-color: #7FD008;
+}
+
+/*Titulo Sprints*/
+.sprint3 h1,
+.sprint2 h1,
+.sprint1 h1 {
+    font-size: 35px;
+    font-family: 'Sunday';
+    color: #fff;
+}
+.sprint3{
+    
+    background-color: #7FD008;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 150px;
+    margin: 0 auto;
+    max-width: 20%; /* Largura dos botões */
+    margin-top: 10px; /* Espaço entre os botões */    
+    position:relative;
+}
+.sprint2{
+
+    background-color: #7FD008;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 150px;
+    margin: 0 auto;
+    max-width: 20%; /* Largura dos botões */
+    margin-top: 10px; /* Espaço entre os botões */    
+    position:relative;
+}
+.sprint1 {
+    background-color: #7FD008;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 150px;
+    margin: 0 auto;
+    max-width: 30%; /* Largura dos botões */
+    margin-top: 10px; /* Espaço entre os botões */    
+    position:relative;
+}
+
+/*Conteudo das Sprints*/
+.ConteudoSprint3,
+.ConteudoSprint2,
+.ConteudoSprint1 {
+    position: relative;
+    
+}
+.apoiadores h2 {
+    font-size: 25px;
+}
+.apoiadores,
+.ScrumMaster {
+    font-size: 25px;
+    margin-left: 7.5%;
+    width: 85%;
+    text-align: center;
+    font-family: 'Sunday';
+}
+
+/*Atividades Realizadas*/
+.atividades ul {
+    font-size: 20px ;
+    margin-top: 1%;
+}
+.atividades3,
+.atividades2,
+.atividades {
+    margin-left: 8%;
+    width: 85%;
+    text-align: justify;
+    font-family: 'Sunday';
+    font-size: 25px;
+}
+
+/*Imagens*/
+.jogando img,
+.loja img,
+.personagem img,
+.jogo img {
+    max-width: 95%; /* A imagem do cabeçalho ocupará 100% da largura da tela */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+.personagem img,
+.jogando img {
+    margin: 2% auto;
+}
+.personagem,
+.jogando {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.loja,
+.jogo,
+.resgatandoNossaHistoria,
+.sweetsmile {
+    text-align: center;
+    width: 100%;
+}
+
+/*Cor e fonte*/
+ul,
+h2 {
+    color: #7FD008;
+}
+p {
+    color: #004d28;
+}
+@font-face{
+    font-family:'Sunday';
+    src: url('PixAntiqua.ttf') format('truetype');
+  }
